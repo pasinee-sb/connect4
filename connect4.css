@@ -1,9 +1,25 @@
 /* game board table */
+body{
+  background-image: url(https://media.istockphoto.com/id/871036876/vector/pattern-stripe-seamless-green-colors-diagonal-landscape-pattern-stripe-abstract-background.jpg?s=612x612&w=0&k=20&c=L_fquxvvdJR8ZnOA93hIR3vqu2a_dZubH9tw3wu3_TI=);
+}
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+
+}
 
 #board td {
-  width: 50px;
-  height: 50px;
-  border: solid 1px #666;
+  width: 80px;
+  height: 80px;
+  border: solid 3px #666;
+  
+
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -13,23 +29,34 @@
   margin: 5px;
   width: 80%;
   height: 80%;
+  border-radius: 50px;
+  
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
 .piece.p1 {
-  background-color: navy;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNF57zshXgPfzfjUeBiTg88m_gIQiI0FII5w&usqp=CAU);
+  border:3px solid rgb(197, 68, 237);
+  background-position: center;
+  background-size: 100px;
+
 }
 
 .piece.p2 {
-  background-color: blueviolet;
+  background-image: url(https://i.natgeofe.com/n/9135ca87-0115-4a22-8caf-d1bdef97a814/75552_2x1.jpg);
+  background-position: center;
+  background-size: 70px;
+  border:solid 3px rgb(143, 150, 249);
 }
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: dashed 3px lightgray;
 }
 
 #column-top td:hover {
   background-color: rgb(167, 60, 177);
+
+  
 }

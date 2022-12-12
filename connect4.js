@@ -41,6 +41,7 @@ const htmlBoard =  document.getElementById('board')
  let top = document.createElement("tr");
   //add id to top column "column-top"
   top.setAttribute("id", "column-top");
+  
   //  listens to clicks on those columns to add a player's piece
   top.addEventListener("click", handleClick);
 
@@ -49,6 +50,7 @@ const htmlBoard =  document.getElementById('board')
   for (let x = 0; x < WIDTH; x++) {
     let headCell = document.createElement("td");
     headCell.setAttribute("id", x);
+    // headCell.innerHTML(<h1>+</h1>);
     //append headcells to the rows creted on "top"
     top.append(headCell);
   }
@@ -128,6 +130,7 @@ function endGame(msg) {
  setTimeout(()=>{
   alert(msg)
  },200);
+ window.location = 'https://pasinee-sb.github.io/connect4/';
 }
 
 /** handleClick: handle click of column top to play piece */
