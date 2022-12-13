@@ -21,6 +21,9 @@ h1 {
   
 
 }
+button {
+  align-items: center;
+}
 
 /* pieces are div within game table cells: draw as colored circles */
 

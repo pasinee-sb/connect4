@@ -130,7 +130,11 @@ function endGame(msg) {
  setTimeout(()=>{
   alert(msg)
  },200);
- window.location = 'https://pasinee-sb.github.io/connect4/';
+
+ setTimeout(()=>{
+  window.location.href = 'https://pasinee-sb.github.io/connect4/';
+ }, 1000);
+ 
 }
 
 /** handleClick: handle click of column top to play piece */
