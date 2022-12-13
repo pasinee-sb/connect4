@@ -162,6 +162,11 @@ function handleClick(evt) {
 
   // check for win
   if (checkForWin()) {
+    if(currPlayer===1){
+      currPlayer="Puppy";
+    }else if (currPlayer===2){
+      currPlayer="Kitty";
+    }
     return endGame(`Player ${currPlayer} won!`);
   }
 
